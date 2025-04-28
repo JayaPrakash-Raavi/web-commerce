@@ -1,0 +1,122 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .login-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+    text-shadow: 1px 1px #ccc;
+    margin-bottom: 30px;
+  }
+  
+  .login-box {
+    background: white;
+    padding: 30px 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .role-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .role-toggle label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .role-toggle input {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .role-toggle label.active {
+    color: #007bff;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f1f1f1;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fff;
+  }
+  
+  .login-btn {
+    margin-top: 20px;
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .bottom-register {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .bottom-register hr {
+    margin-bottom: 10px;
+  }
+  
+  .register-btn {
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  .register-btn:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,107 @@
+/* Register.css */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .register-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #ccc;
+  }
+  
+  .register-box {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  }
+  
+  .role-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .role-toggle label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .role-toggle input {
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  
+  .role-toggle label.active {
+    color: #007bff;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f1f1f1;
+  }
+  
+  .register-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fff;
+  }
+  
+  .register-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0,123,255,0.2);
+    transition: background 0.3s;
+  }
+  
+  .register-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-redirect {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .login-redirect span {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-redirect span:hover {
+    text-decoration: underline;
+  }
+  

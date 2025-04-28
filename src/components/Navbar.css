@@ -1,0 +1,130 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-logo {
+    color: #0074cc;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .navbar-center {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .navbar-search {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    gap: 25px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .navbar-menu-item {
+    color: #0074cc;
+    cursor: pointer;
+  }
+  
+  .navbar-dropdown {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+    width: 160px;
+  }
+  
+  .navbar-dropdown > div {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .navbar-dropdown > div:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* ...existing styles... */
+
+.navbar-menu-item {
+    color: #0074cc;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .navbar-menu-item:hover {
+    background-color: #e6f0ff;
+    color: #004a99;
+  }
+  
+  .navbar-dropdown > div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .navbar-dropdown > div:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Optional: Add hover to profile/wishlist/cart icons */
+  .navbar-right span:hover {
+    color: #0074cc;
+    transition: color 0.2s ease;
+  }
+  
+  /* Optional: Hover on logo to indicate it's clickable */
+  .navbar-logo:hover {
+    text-decoration: underline;
+    color: #004a99;
+  }
+
+  .cart-icon,.wishlist-icon{
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .cart-icon:hover {
+    color: #0074cc;
+    transform: scale(1.1);
+  }
+  .wishlist-icon{
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .wishlist-icon:hover {
+    color: #0074cc;
+    transform: scale(1.1);
+  }
+  

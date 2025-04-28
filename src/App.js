@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import CustomerHome from './pages/CustomerHome';
+import SellerHome from './pages/SellerHome';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Cart from './pages/Cart';
+import ProtectedRoute from './components/ProtectedRoute';
+import MyAccount from './pages/MyAccount';
+import MyOrders from './pages/MyOrders';
+import MyProducts from './pages/MyProducts';
 
 function App() {
+  const [role, setRole] = useState(localStorage.getItem('role') || 'customer');
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setRole(localStorage.getItem('role') || 'customer');
+    };
+
+    window.addEventListener('storage', handleStorageChange); 
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar role={role} />
+      <Routes>
+        <Route path="/" element={role === 'seller' ? <SellerHome /> : <CustomerHome />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
+        <Route path="/account" element={<MyAccount />} />
+        <Route path="/orders" element={<MyOrders />} />
+        {/* Add MyProducts, Deliveries later */}
+        <Route path="/my-products" element={<MyProducts />} />
+      </Routes>
+    </Router>
   );
 }
 
